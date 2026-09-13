@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+fieldset {
+    background: #ffffff;
+    border: 1px solid gray;
+    border-radius: 8px;
+    padding: 20px ;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;/*define el ancho*/
+    margin-bottom: 5px;/*espacio vertical entre el primer cuadro y el segundo,margen de abajo de un elemento*/
+}
+legend {
+    font-weight: bold;
+    color: white;
+    background: #007bff;
+    padding: 5px 15px;
+    border-radius: 4px;
+    text-align: center; /*centra el texto de manera horizontal*/
+}
+label {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+.fieldset2{
+    display: flex;/*es flexible en todos los aspectos y pone en horizontal,pero luego se puede cambiar*/
+}

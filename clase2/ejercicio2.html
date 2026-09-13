@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <link rel="stylesheet" href="ejercicio2.css">
+</head>
+<body>
+    <h3>Informacion sobre el producto.</h3>
+    <form action="ejercicio2.php" method="post">
+    <fieldset>
+         <legend>Datos Basicos</legend>
+
+         <label for="txtnombre">Nombre</label><br>
+         <input type="text" id="txtnombre" name="txtnombre" required placeholder="Ej:Impresora multifuncion" maxlength="50" minlength="3"><br>
+         <label for="txtdescripcion">Descripcion</label><br>
+         <textarea name="txtdescripcion" id="txtdescripcion" required rows="5" cols="40" placeholder="mucho texto" minlength="10"></textarea>
+
+    </fieldset>
+    <fieldset>
+        <legend>Datos Economicos</legend>
+        <div class="fieldset2">
+        <div>
+        <label for="txtprecio">Precio</label><br>
+        <input type="number" id="txtprecio" name="txtprecio" required placeholder="Ej:588">
+        <label for="txtprecio">Gs.</label><br>
+        <label for="rpromo">Promocion</label><br>
+        <input type="radio" name="rpromo" id="rnadie" value="Ninguna" checked><label for="rnadie">Ninguna</label>
+    <br><input type="radio" name="rpromo" id="rtransporte" value="Transporte Gratuito"><label for="rtransporte">transporte Gratuito</label>
+    <br><input type="radio" name="rpromo" id="rdescuento" value="Descuento 5%"><label for="rdescuento">Descuento 5%</label>
+    </div>
+    <div>
+        <label for="cmbimpuesto">Impuestos:</label>
+        <select name="cmbimpuesto" id="cmbimpuesto">
+             <option value="0.05">5%</option>
+             <option value="0.10" selected>10%</option>
+             <option value="0.15">15%</option>
+        </select>
+    </div>-
+    </div>
+
+    </fieldset>
+    <div>
+    <input type="submit" value="Enviar datos" name="btnenviar" id="btnenviar">
+    <input type="reset" value="Borrar datos" name="btnborrar" id="btnborrar">
+    </div>
+    </form>
+</body>
+</html>

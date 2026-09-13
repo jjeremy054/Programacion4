@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ejercicio1.css">
+    <title>formulario</title>
+</head>
+<body>
+    <fieldset>
+
+        <legend>DATOS PERSONALES</legend>
+        <form action="ejercicio1.php" method="post">
+            <label for="txtnombre">NOMBRE :</label>
+            <input type="text" id="txtnombre" name="txtnombre" required placeholder="Ej: Juan" maxlength="50" minlength="3">
+        <br><label for="txtapellido">APELLIDO :</label>
+            <input type="text" id="txtapellido" name="txtapellido" required placeholder="Ej: Gomez" maxlength="50" minlength="3">
+        <br><label for="">ESTADO CIVIL :</label>
+            <input type="radio" name="radioe" id="radios" checked value="Soltero"> <label for="radios">Soltero</label>
+            <input type="radio" name="radioe" id="radioc" value="Casado"> <label for="radioc">Casado</label>
+            <input type="radio" name="radioe" id="radiov" value="Viudo"> <label for="radiov">Viudo</label>
+            <!-- el for=radiov sirve para asociar el label con el radiobutton y asi tambien seleccionar-->
+             <!-- el checked seleciona por defecto al radiobutton-->
+        <br><label for="">Ciudad :</label>
+            <select name="cbxciudad" id="cbxciudad">
+                    <option value="Caacupe" selected>Caacupe</option><!--el selescted selecciona primero en el combobox-->
+                    <option value="Atyra">Atyra</option>
+                    <option value="Altos">Altos</option>
+                    <option value="Piribebuy">Piribebuy</option>
+                    <option value="Loma Grande">Loma Grande</option>
+            </select> <br>
+            <label for="txtcontrasena">Contraseña :</label>
+            <input type="password" name="txtcontrasena" id="txtcontrasena" minlength="8" maxlength="50"> <br>
+            <input type="submit" value="ENVIAR" name="btnenviar">
+            <input type="reset" value="BORRAR" name="btnborrar">
+        </form>
+
+    </fieldset>
+
+
+</body>
+</html>

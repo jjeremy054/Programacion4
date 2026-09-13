@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <form action="ejercicio20.php" method="post">
+        <fieldset class="bg-primary text-light mt-4 ms-5 me-5 pt-5 pb-5 px-5 rounded shadow">
+            <legend>CUADRADO</legend>
+            <label for="txtlado">LADO</label>
+            <input type="number" id="txtlado" name="txtlado" required class="text-light bg-dark"><br><br>
+            <select name="txtopcion[]" id="txtopcion[]" multiple class="text-light bg-dark">
+                <option value="superficie">SUPERFICIE</option>
+                <option value="perimetro">PERIMETRO</option>
+            </select><br><br>
+            <input type="submit" value="ENVIAR" name="btnenviar" class="bg-success text-light">
+            <input type="reset" value="BORRAR" name="btnborrar" class="bg-danger text-light">
+        </fieldset>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

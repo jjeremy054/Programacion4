@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="ejercicio17.php" method="post">
+        <fieldset>
+            <legend>DATOS PERSONALES</legend>
+            <label for="txtnombre">NOMBRE :</label>
+            <input type="text" id="txtnombre" name="txtnombre" required placeholder="Ej:Juan" maxlength="50" minlength="3"><br>
+            <label for="txtapellido">APELLIDO :</label>
+            <input type="text" id="txtapellido" name="txtapellido" required placeholder="Ej:Gomez" maxlength="50" minlength="3"><br>
+            <label for="txtcedula">Nª DE CEDULA :</label>
+            <input type="number" id="txtcedula" name="txtcedula" required placeholder="Ej:74234324" max="10000000" min="2000000"><br>
+            <!--el max y min funcionan con number ,max es ek numero maximo y min el minimo-->
+            <label for="txtcelular">NUMERO DE CELULAR :</label>
+            <input type="text" id="txtcelular" name="txtcelular" required placeholder="Ej:0981234786" maxlength="12" minlength="9"><br>
+            <!--el maxlength y minlength solo funcionan con type=text no con number-->
+            <label for="txtemail">EMAIL :</label>
+            <input type="text" id="txtemail" name="txtemail" required placeholder="Ej:maxi9@gmail.com" maxlength="20" minlength="10"><br>
+            <label for="txtfecha">FECHA DE NACIMIENTO :</label> 
+            <input type="date" id="txtfecha" name="txtfecha" required>
+             <br><br>
+             <input type="submit" value="ENVIAR" name="btnenviar">
+             <input type="reset" value="BORRAR" name="btnborrar">
+        </fieldset>
+    </form>
+</body>
+</html>
